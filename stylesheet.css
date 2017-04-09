@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/*color guide:
+#9aa2b7 blue-grey
+#f7ffff off-white
+#3d444a dark grey
+#43456d dark purple-grey
+#7d7f98 purple-grey
+#ddd background white
+#dae3f4 light grey
+#605ca8 blue-purple
+#bf2dc4 magenta
+#666 grey
+*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+html {
+	background: #ddd;
+}
+body {
+	font-size: 25px;
+    font-family: 'BenchNine', 'Arial', sans-serif;
+	max-width: 1100px;
+    width: 85%;
+	margin: 0 auto;
+	padding: 0 50px;
+	text-align:left;
+	position: relative;
+	background: white;
+}
+
+a {
+	text-decoration: none;
+	color: #605ca8;
+}
+a:hover {
+	color: #bf2dc4;
+}
+
+/* layout styles */
+header#mainHeader {
+	height: 10%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+main {
+	float: left;
+    clear: both;
+	width: 46%;
+	padding: 0 2%;
+	margin-bottom: .5em;
+}
+section {
+	float: right;
+	clear: right;
+	width: 100%;
+	margin-bottom: 0;
+}
+aside {
+	float: right;
+	clear: right;
+	width: 26%;
+	margin-bottom: 1em;
+}
+
+footer {
+	clear: both;
+	overflow: auto;
+}
+/*-------------presentation styles---------------*/
+
+/*header styles*/
+header#mainHeader {
+	background-color: #9aa2b7;
+    padding: 0 4% 2% 4%;
+	margin-bottom: 1em;
+}
+
+header#mainHeader h1 {0
+	font-size: 2.5em;
+	color: #3d3f4c;
+	font-weight: normal;
+    line-height: .75em;
+}
+
+header#mainHeader h2 {
+    font-size: 1.5em;
+    color: #f7ffff;
+    font-weight: normal;
+}
+header#mainHeader p {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+header #name {
+    padding-top: 1.8em
+}
+
+header #contact {
+    text-align: right;
+    padding-top: 1.4em;
+}
+
+/*work experience section styles*/
+main {
+    background-color: #9aa2b7;
+    padding-left: 45px;
+    padding-bottom: 1em;
+    margin-right: 2%;
+}
+
+main header h2 {
+	font-weight: normal;
+	font-size: 1.8em;
+	margin-top: .5em;
+    margin-bottom: .6em;
+    color: #f7ffff;
+}
+main header h3 {
+	font-weight: normal;
+	color: #3d444a;
+	font-size: 1.4em;
+}
+
+main h4 {
+	font-weight: normal;
+    font-size: 1.1em;
+	color: #dae3f4;
+}
+
+main ul {
+    list-style: circle inside none;
+    width: 90%;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #666;
+}
+
+main li {
+   margin-top: .5em; 
+}
+
+/*aside styles*/
+aside {
+    width: 30%;
+    padding: 0 45px;
+}
+aside h2 {
+    font-weight: normal;
+	font-size: 1.8em;
+	margin-top: .8em;
+    margin-bottom: .6em;
+    color: #605ca8;
+}
+
+aside h3 {
+    font-weight: normal;
+	color: #3d444a;
+	font-size: 1.4em;
+    padding-top: .2em;
+}
+aside ul {
+    list-style: none inside none;
+    width: 90%;
+    padding-bottom: 1em;
+}
+
+aside li span {
+    color: #3d444a;
+    font-weight: 100;
+}
+aside li {
+    color: #666;
+}
+
+aside ul ul {
+    list-style: circle inside none;
+}
+
+aside #skills {
+    border-bottom: 2px solid #666;
+}
+
+/*footer styles*/
+footer {
+	border-top: 2px solid #7f7f7f;
+	padding: 2em;
+}
+footer div.leftCol {
+	float: left;
+	width: 45%;
+}
+footer div.rightCol {
+	float: left;
+    margin-left: 25%;
+}
+footer h2 {
+    font-weight: normal;
+	font-size: 1.8em;
+	margin-bottom: .6em;
+    color: #605ca8;
+}
+
+footer h3 {
+    font-weight: normal;
+	color: #3d444a;
+	font-size: 1.4em;
+    padding-top: .2em;
+}
+footer p {
+	margin-bottom: 1em;
+	color: #666;
+}
+footer p.topLink {
+	background: url(up.gif) no-repeat right center;
+	padding-right: 20px;
+    width: 15%;
+    clear: both;
+}
